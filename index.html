@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в стиле Достоевского</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1>Тень Петербурга</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" id="start-game">Начать игру</a></li>
+                    <li><a href="#">Произведения</a></li>
+                    <li><a href="#">О Достоевском</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Game Section -->
+    <section id="game-section" class="hidden">
+        <div class="container">
+            <div id="game-text" class="game-text">
+                <p>Вы стоите на мосту, над вами — холодное небо Петербурга. Слева виднеется гостиница, справа — темный переулок. Что вы сделаете?</p>
+            </div>
+            <div class="choices">
+                <button onclick="makeChoice(1)">Пойти в гостиницу</button>
+                <button onclick="makeChoice(2)">Спуститься в переулок</button>
+            </div>
+            <div id="game-image" class="game-image">
+                <img src="image/brigde.jpg" alt="Мост Петербурга">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2024 Игра в стиле Достоевского. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
